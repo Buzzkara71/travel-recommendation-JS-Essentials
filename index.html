@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Travel Recommender</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <header>
+        <nav>
+            <a href="#" class="nav-link active" data-page="home">TravelWorld</a>
+            <ul>
+                <li><a href="#" class="nav-link" data-page="home">Home</a></li>
+                <li><a href="#" class="nav-link" data-page="about">About Us</a></li>
+                <li><a href="#" class="nav-link" data-page="contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section id="home" class="page-content active">
+    
+            <div class="hero">
+                <h1>Find Your Next Adventure</h1>
+                <p>Welcome to TravelWorld, your personal guide to the most breathtaking destinations. We help you discover ideal locations based on your preferences, complete with detailed descriptions and multimedia content to help you plan the perfect trip.</p>
+            </div>
+        
+            <div class="culture-promo">
+                <div class="promo-content">
+                    <h2>Discover a World of Culture</h2>
+                    <p>Immerse yourself in new traditions, taste authentic flavors, and connect with the history of the world's most vibrant cultures.</p>
+                    <a href="#" class="btn-promo">Book Now</a>
+                    <div class="social-links">
+                        <a href="https://www.instagram.com">Instagram</a>
+                        <a href="https://www.facebook.com/">Facebook</a>
+                        <a href="https://www.x.com">Twitter</a>
+                    </div>
+                </div>
+            </div>
+            <div class="recommendation-grid">
+                <div class="personalizer-section">
+                    <h2>Our Top Recommendations</h2>
+                    
+                    <div class="personalizer-controls">
+                        <label for="search-input">Search Destinations:</label>
+                        <input type="text" id="search-input" placeholder="e.g., Beach, Temple, Italy...">
+                        <p id="no-results-message" style="display: none;">No destinations found.</p>
+                    </div>
+        
+                    <div id="personalized-results">
+                        <div id="beach-rec" class="card personalized-rec" data-title="Beach Paradise: The Maldives">
+                            <h3>Beach Paradise: The Maldives</h3>
+                            <p>Escape to the stunning white-sand beaches and crystal-clear turquoise waters of the Maldives. Perfect for relaxation, snorkeling, and romantic getaways.</p>
+                            <img src="/assets/img1.jpg" alt="Maldives overwater bungalows">
+                            <img src="/assets/img2.jpg" alt="Maldives beach at sunset">
+                        </div>
+                        
+                        <div id="temple-rec" class="card personalized-rec" data-title="Ancient Temple: Kyoto, Japan">
+                            <h3>Ancient Temple: Kyoto, Japan</h3>
+                            <p>Explore the serene beauty of Kyoto, home to thousands of classical Buddhist temples, gardens, imperial palaces, and traditional wooden houses.</p>
+                            <img src="/assets/img3.jpg" alt="Kinkaku-ji Golden Pavilion in Kyoto">
+                            <img src="/assets/img4.jpg" alt="Fushimi Inari Shine red gates in Kyoto">
+                        </div>
+        
+                        <div id="landmark-rec" class="card personalized-rec" data-title="Landmark Discovery: Italy">
+                            <h3>Landmark Discovery: Italy</h3>
+                            <p>Discover Italy, a country rich in history, art, and culinary delights. From the ancient ruins of Rome to the rolling hills of Tuscany, adventure awaits.</p>
+                            <img src="/assets/img5.jpg" alt="The Colosseum in Rome, Italy">
+                            <img src="/assets/img6.jpg" alt="Venice canals with gondolas">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="about" class="page-content">
+            <h2>About Us</h2>
+            <p>We are a team of passionate travelers dedicated to making your dream vacation a reality. Our mission is to provide personalized, engaging, and seamless travel planning.</p>
+            
+            <div class="team">
+                <h3>Our Team</h3>
+                <div class="team-member">
+                    <h4>Baskara Dwipa Raharja</h4>
+                    <p>Lead Developer & Travel Enthusiast</p>
+                </div>
+                <div class="team-member">
+                    <h4>Yanto Exeltor</h4>
+                    <p>Content Strategist & World Explorer</p>
+                </div>
+            </div>
+        </section>
+
+        <section id="contact" class="page-content">
+            <h2>Contact Us</h2>
+            <p>Have a question or a destination to suggest? Get in touch!</p>
+            
+            <form id="contact-form">
+                <div class="form-group">
+                    <label for="name">Name</label>
+                    <input type="text" id="name" required>
+                </div>
+                <div class="form-group">
+                    <label for="email">Email</label>
+                    <input type="email" id="email" required>
+                </div>
+                <div class="form-group">
+                    <label for="message">Message</label>
+                    <textarea id="message" rows="5" required></textarea>
+                </div>
+                <button type="submit">Send Message</button>
+            </form>
+            <p id="form-success" style="display: none;">Thank you for your message!</p>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2025 TravelWorld Final Project</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
